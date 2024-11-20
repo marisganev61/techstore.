@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fliud">
+      <a class="navbar-brand" href="index.html">TechStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </nav>
+
+
+   <!-- contact section -->
+    <section id="contact " class="container my-5">
+      <h2 class="h2">Contact Us</h2>
+      <p class="p " style="color: #42424d;">We would love to hear from you! Fill out the form below, and we'll get  back to you as soon as possible.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label text-white">Your Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name" id="name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label text-white">Your Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email" id="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label text-white">Your Message</label>
+              <textarea  class="form-control" placeholder="Enter your message" id="message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <p class="text-center text-white mt-5">&copy; 2024 TechStore | All Right Reserved</p>
+     </footer>
+</body>
+</html>

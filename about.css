@@ -1,0 +1,140 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1c1c1e;
+  color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar{
+  background-color: rgba(81, 81, 89, 0.9);
+  padding: 10px 20px;
+  border-bottom: 5px solid #444;
+  position: sticky;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.navbar-nav{
+  
+  display: flex;
+  gap: 15px;
+} 
+.navbar-nav .nav-link{
+  font-size: 1rem;
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+  
+}
+.navbar-nav .nav-link.active{
+  font-weight: bold;
+  color: #00aaff !important;
+  transition: color0.3s ease;
+}
+.navbar-nav .nav-link:hover{
+  color: #00aaff;
+}
+
+/* about styles */
+#about{
+  background-color: #1e1e20;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+}
+#about h2
+#team h2{
+  font-size: 2.5rem;
+  color: #ffffff;
+  /* margin-bottom: 20px; */
+}
+#about p
+#team p{
+  font-size: 1.2rem;
+  color: #bbbbbb;
+/* line-height: 1.6; */
+}
+#about h3{
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+#about img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* meeting the team */
+#team img{
+  width: 15opx;
+  height: 150px;
+  border: 5px solid #00aaff;
+  transition:  transform 0.3s ease, box-shadow 0.3s ease;
+}
+#team img:hover{
+  transform: scale(1.1);
+  box-shadow: 0  6px 15px rgba(0, 170, 255, 0.7);
+}
+#h4{
+  color: #ffffff;
+  margin-top: 10px;
+}
+#team p{
+  color: #bbbbbb;
+}
+/* callto avtion */
+#cta{
+  background:linear-gradient(135deg, #1e1e20, #2c2c2e);
+  color: white;
+  padding: 50px 20px;
+}
+.cta-heading{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.cta-subtext{
+  font-size: 1.2rem;
+  color: #dcdcdc;
+  margin-bottom: 30px;
+}
+#cta-button{
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+#cta-button:hover{
+  background-color: #0056b3;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+  transform: translateY(-3px);
+}
+@media(max-width:768px){
+  .cta-heading{
+    font-size: 2rem;
+  }
+  .cta-subtext{
+    font-size: 1rem;
+  }
+}
+/* footer */
+footer{
+  background-color: #2c2c2e;
+  padding: 20px;
+  color: #fff;
+}

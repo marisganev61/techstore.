@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootsrap@5.3.1/dist/css/bootsrap.min.css">
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fliud">
+      <a class="navbar-brand" href="index.html">TechStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- product -->
+  <section id="products" class="py-5">
+    <div class="container">
+      <h2 class="section-heading text-center" data-aos="fade-up">Our Featured products</h2>
+      <p class="section-subtext text-center" data-aos="fade-up" data-aos-delay="200">
+        Discover our best-selling tech gadgets and accessories.
+      </p>
+      <div class="row mt-4">
+        <!-- product1 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <div class="product-card">
+            <img src="imgage/product 1.jpg" alt="product 1" class="product-image">
+            <div class="product-info">
+              <h3 class="product-name"><b>Wireless Headphones</b></h3>
+              <p class="product-price">$99.99</p>
+              <button class="btn btn-primary add-to-cart" data-id="1" data-name="Wireless Headphones"
+                data-price="99.99">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- product2 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-card">
+            <img src="imgage/product 2.jpg" alt="product 2" class="product-image">
+            <div class="product-info">
+              <h3 class="product-name"><b>GBS Speaker</b></h3>
+              <p class="product-price">$499.99</p>
+              <button class="btn btn-primary add-to-cart" data-id="2" data-name="GBS Speaker" data-price="499.99">Add to
+                Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- product3 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="product-card">
+            <img src="imgage/product 3.jpg" alt="product 3" class="product-image">
+            <div class="product-info">
+              <h3 class="product-name"><b>Quality Laptops</b></h3>
+              <p class="product-price">$199.99</p>
+              <button class="btn btn-primary add-to-cart" data-id="3" data-name="Quality Laptops"
+                data-price="199.99">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- cart session -->
+      <div id="cart-section" class="mt-5">
+        <h3><b>Your Cart</b></h3>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total:$0.00</p>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="product-section">
+    <h2 class="h2_2"><b>More of Our Products</b></h2>
+    <!-- first 6 product -->
+    <div class="product-grid">
+      <!-- product 1 -->
+      <div class="product-card_1">
+        <img src="imgage/21ddd6d520f116ed58ac4ec670b46f95.jpg" alt="Wireless Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>High-quality sound and noise cancellation.</p>
+        <p class="price">$99.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9734;
+          <span>(4.0)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="1">Add to wishlist</button>
+          <button class="Quick View" data-id="1">Quick View</button>
+        </div>
+      </div>
+
+
+
+      <!-- product 2 -->
+      <div class="product-card_1">
+        <img src="imgage/2c4d7821f0114db9b04346cd5f0a52a0.jpg" alt="Smartphone">
+        <h3><b>Smartphone</b></h3>
+        <p>Latest model with advance features.</p>
+        <p class="price">$499.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9733;
+          <span>(5.0)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="2">Add to wishlist</button>
+          <button class="Quick View" data-id="2">Quick View</button>
+        </div>
+      </div>
+
+
+      <!-- product 3 -->
+      <div class="product-card_1">
+        <img src="imgage/050d3bb9f8cb34d76bc2045086128420.jpg" alt="Smartwatch">
+        <h3><b>Smartwatch</b></h3>
+        <p>Track your fitness and stay connected.</p>
+        <p class="price">$299.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9734;
+          <span>(4.2)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="3">Add to wishlist</button>
+          <button class="Quick View" data-id="3">Quick View</button>
+        </div>
+      </div>
+
+      <!-- product 4 -->
+      <div class="product-card_1">
+        <img src="imgage/2ca23bbaacb945c319568a2d7780cf6b.jpg" alt="Tablets">
+        <h3><b>Tablets</b></h3>
+        <p>Powerful performance for any task.</p>
+        <p class="price">$999.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9733;
+          <span>(5.0)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="4">Add to wishlist</button>
+          <button class="Quick View" data-id="4">Quick View</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- another product grid -->
+    <div class="product-grid_2">
+
+      <!-- product 5-->
+      <div class="product-card_1">
+        <img src="imgage/3fdc64eed91130acc22d344b50cc442b.jpg" alt="Multi function socket">
+        <h3><b>Multi function socket</b></h3>
+        <p>Portable and light weight with great display.</p>
+        <p class="price">$299.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9734;
+          <span>(4.0)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="5">Add to wishlist</button>
+          <button class="Quick View" data-id="5">Quick View</button>
+        </div>
+      </div>
+
+      <!-- product 6 -->
+      <div class="product-card_1">
+        <img src="imgage/2beeedbfa81e53854d11052f216e7fc4.jpg" alt="Camera">
+        <h3><b>Camera</b></h3>
+        <p>Captures stunning photos with proffesional quality.</p>
+        <p class="price">$599.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9733;
+          <span>(5.0)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="6">Add to wishlist</button>
+          <button class="Quick View" data-id="6">Quick View</button>
+        </div>
+      </div>
+
+      <!-- product 11 -->
+      <div class="product-card_1">
+        <img src="imgage/7839758c41dc1b634f3b7cab3be5aa34.jpg" alt="AR Headset">
+        <h3><b>AR Headset</b></h3>
+        <p>High-quality visual product with more enhancement.</p>
+        <p class="price">$99.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9734;
+          <span>(4.0)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="12">Add to wishlist</button>
+          <button class="Quick View" data-id="12">Quick View</button>
+        </div>
+      </div>
+
+      <!-- product 11 -->
+      <div class="product-card_1">
+        <img src="imgage/b19bf5125120217d3b098aed7d40e6be.jpg" alt="AR Headset">
+        <h3><b>PalmTop</b></h3>
+        <p>High-quality visual product with more enhancement.</p>
+        <p class="price">$99.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9734;
+          <span>(4.0)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="12">Add to wishlist</button>
+          <button class="Quick View" data-id="12">Quick View</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- additional products -->
+    <div class="additional-products">
+      <!-- product 7 -->
+
+      <div class="product-card_1">
+        <img src="imgage/0d7b1e0f757049a58cdb57ef89957623.jpg" alt="Gaming Console">
+        <h3><b>Gaming Console</b></h3>
+        <p>Immersive gaming experience with 4k support.</p>
+        <p class="price">$399.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9734;
+          <span>(4.5)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="7">Add to wishlist</button>
+          <button class="Quick View" data-id="7">Quick View</button>
+        </div>
+      </div>
+
+      <!-- product8-->
+      <div class="product-card_1">
+        <img src="imgage/26c6ee45d9227f64630966602cea778a.jpg" alt="CAM Projector">
+        <h3><b>CAM Projector</b></h3>
+        <p>High-quality sound and noise cancellation.</p>
+        <p class="price">$699.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9733;
+          <span>(5.0)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="8">Add to wishlist</button>
+          <button class="Quick View" data-id="8">Quick View</button>
+        </div>
+      </div>
+
+      <!-- product 9-->
+      <div class="product-card_1">
+        <img src="imgage/82cb318ec9e16f095aa1413e645c5887.jpg" alt="LED Smart Lamp">
+        <h3><b>LED Smart Lamp</b></h3>
+        <p>High-quality led lamp with more enhancement.</p>
+        <p class="price">$799.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9734;
+          <span>(4.0)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="9">Add to wishlist</button>
+          <button class="Quick View" data-id="9">Quick View</button>
+        </div>
+      </div>
+
+      <!-- additional products -->
+      <!-- product 10-->
+      <div class="product-card_1">
+        <img src="imgage/4aeb66a5d476c3c03ca5bd687daef2d7.jpg" alt="Car Charger">
+        <h3><b>USB, Remote</b></h3>
+        <p>quality USB, Remote with Immersive features.</p>
+        <p class="price">$99.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9734;
+          <span>(4.5)</span>
+      </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="10">Add to wishlist</button>
+          <button class="Quick View" data-id="10">Quick View</button>
+        </div>
+      </div>
+
+      <!-- product 11 -->
+      <div class="product-card_1">
+        <img src="imgage/a032b92c6aaeb12afaebe00ed22a5b27.jpg" alt="AR Headset">
+        <h3><b>Gadgets</b></h3>
+        <p>High-quality visual product with more enhancement.</p>
+        <p class="price">$99.99</p>
+        <div class="rating">
+          &#9733;&#9733;&#9733;&#9733;&#9734;
+          <span>(4.0)</span>
+        </div>
+
+        <div class="product-buttons">
+          <button class="Add-to-Wishlist" data-id="12">Add to wishlist</button>
+          <button class="Quick View" data-id="12">Quick View</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+  </div>
+
+
+  
+
+
+  <!-- footer -->
+  <footer>
+    <p class="text-center text-white mt-5">&copy; 2024 TechStore | All Right Reserved</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cartItems = [];
+      const cartList = document.getElementById("cart-items");
+      const cartTotal = document.getElementById("cart-total");
+
+
+      function updateCart() {
+        cartList.innerHTML = "";
+        let total = 0;
+
+
+        cartItems.forEach((item, index) => {
+          const li = document.createElement("li");
+          li.innerHTML = `${item.name} - $${item.price}
+
+        <button class="remove-btn" data-index="${index}">Remove</button>`;
+
+          cartList.appendChild(li);
+          total += parseFloat(item.price);
+        });
+        console.log("cartItems:", cartItems);
+        cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+      }
+
+
+      // add items to cart
+
+      document.querySelectorAll(".add-to-cart").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const id = e.target.getAttribute("data-id");
+          const name = e.target.getAttribute("data-name");
+          const price = e.target.getAttribute("data-price");
+
+          cartItems.push({ id, name, price });
+          updateCart();
+        });
+      });
+
+
+      // remove item from cart
+      cartList.addEventListener("click", (e) => {
+        if (e.target.classList.contains('remove-btn')) {
+          const index = parseInt(e.target.getAttribute("data-index"), 10);
+
+          console.log("removing item at index:", index);
+          cartItems.splice(index, 1);
+          updateCart();
+        }
+      });
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootsrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

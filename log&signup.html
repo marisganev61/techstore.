@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fliud">
+      <a class="navbar-brand" href="index.html">TechStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="log&signup.html">Signup</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- sign up form -->
+   <div class="form-container" id="signupFormContainer">
+    <h2><b>Create an Account</b></h2>
+
+    <form id="signupForm">
+      <label for="signupUsername">Username</label>
+      <input type="text" name="signupUsername" id="signupUsername" required>
+
+      <label for="signupEmail">Email</label>
+      <input type="email" name="signupEmail" id="signupEmail" required>
+
+      <label for="signupPassword">Password</label>
+      <input type="password" name="signupPassword" id="signupPassword" required>
+
+      <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+    <p>Alredy have an account? <a href="#" id="showLoginForm">Log In</a></p>
+   </div>
+
+
+   <!-- login form -->
+   <div class="form-container" id="loginFormContainer" style="display: none;">
+    <h2><b>Login to your Account</b></h2>
+
+    <form id="loginForm">
+      
+
+      <label for="loginEmail">Email</label>
+      <input type="email" name="loginEmail" id="loginEmail" required>
+
+      <label for="loginPassword">Password</label>
+      <input type="password" name="loginPassword" id="loginPassword" required>
+
+      <button type="submit" class="submit-btn">Log In</button>
+    </form>
+    <p>Dont have an account? <a href="#" id="showSignupForm">Sign Up</a></p>
+   </div>
+
+    <!-- footer -->
+  <footer>
+    <p class="text-center text-white mt-5">&copy; 2024 TechStore | All Right Reserved</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    //show login form
+    const showLoginFormLink = document.getElementById("showLoginForm");
+    const signupFormContainer = document.getElementById("signupFormContainer");
+    const loginFormContainer = document.getElementById("loginFormContainer");
+    showLoginFormLink.addEventListener("click", function(e){
+      e.preventDefault();
+
+      signupFormContainer.style.display = "none";
+      loginFormContainer.style.display = "block";
+    });
+
+
+    //show sign up form
+    const showSignupFormLink = document.getElementById("showSignupForm");
+    showSignupFormLink.addEventListener("click", function(e){
+      e.preventDefault();
+
+      loginFormContainer.style.display = "none";
+      signupFormContainer.style.display = "block";
+    });
+
+    // sign up form validation
+
+    const signupForm = document.getElementById("signupForm");
+    signupForm.addEventListener("submit", function(e){
+      e.preventDefault();
+
+      const username = document.getElementById("signupUsername").value;
+      const email = document.getElementById("signupEmail").value;
+      const password = document.getElementById("signupPassword").value;
+
+      if(!username || !email || !password){
+        alert("please fill out all fields");
+      }else{
+        alert("Sign Up Successfully")
+      }
+    });
+
+    // login form validation
+    const loginForm = document.getElementById("loginForm");
+    loginForm.addEventListener("submit", function(e){
+      e.preventDefault();
+
+     
+      const email = document.getElementById("loginEmail").value;
+      const password = document.getElementById("loginPassword").value;
+
+      if( !email || !password){
+        alert("please enter both email and password");
+      }else{
+        alert("Login Successfully")
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+ body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1c1c1e;
+  color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar{
+  background-color: rgba(81, 81, 89, 0.9);
+  padding: 10px 20px;
+  border-bottom: 5px solid #444;
+  position: sticky;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.navbar-nav{
+  
+  display: flex;
+  gap: 15px;
+} 
+.navbar-nav .nav-link{
+  font-size: 1rem;
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+  
+}
+.navbar-nav .nav-link.active{
+  font-weight: bold;
+  color: #00aaff !important;
+  transition: color0.3s ease;
+}
+.navbar-nav .nav-link:hover{
+  color: #00aaff;
+}
+
+/* contact */
+.container.my-5{
+  background-color: #1e1e20;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+}
+.h2{
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.p{
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  margin-bottom: 30px;
+  text-align: center;
+  
+}
+.form-label{
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.form-control{
+  background-color: #42424d;
+  color: #ffffff;
+  border: 3px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.form-control:focus{
+  border-color: #00aaff;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.8);
+}
+button[type="submit"]{
+  background-color: #00aaff;
+  color: #ffffff;
+  border: none;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+button[type="submit"]:hover{
+  background-color:  #0077cc;
+  transform: scale(1.05);
+}
+
+footer{
+  background-color: #2c2c2e;
+  padding: 20px;
+  color: #fff;
+}
